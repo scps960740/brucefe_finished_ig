@@ -1,46 +1,155 @@
-# Getting Started with Create React App
+# 布魯斯前端 React仿Instagram教學 完成專案
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 如何使用此專案？
 
-## Available Scripts
+1. 安裝依賴
 
-In the project directory, you can run:
+```
+npm i
 
-### `npm start`
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. 啟動專案
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
 
-### `npm test`
+npm run start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `npm run build`
+## 如何美化程式碼排版？
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm run prettier
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+## 如何啟動Json server？
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm run server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 測試API格式
 
-## Learn More
+```
+file: db.json
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+{
+  "posts": [
+    {
+      "id": 1,
+      "location": "布魯斯前端",
+      "account": "bruce_1234",
+      "avatar": "/images/avatars/a1.png",
+      "photo": "/images/posts/main1.png",
+      "likes": 999,
+      "description": "我的老天鵝！",
+      "hashTags": "#鵝鵝",
+      "createTime": "1 HOURS AGO"
+    },
+    {
+      "id": 2,
+      "location": "7-11你好門市",
+      "account": "__0831_xxx__",
+      "avatar": "/images/avatars/a2.png",
+      "photo": "/images/posts/main2.png",
+      "likes": 333,
+      "description": "我的老天鵝！",
+      "hashTags": "#鵝鵝",
+      "createTime": "5 HOURS AGO"
+    },
+    {
+      "id": 3,
+      "location": "Taipei",
+      "account": "gogogo_0214",
+      "avatar": "/images/avatars/a3.png",
+      "photo": "/images/posts/main3.png",
+      "likes": 777,
+      "description": "我的老天鵝！",
+      "hashTags": "#鵝鵝",
+      "createTime": "6 HOURS AGO"
+    },
+    {
+      "id": 4,
+      "location": "信義區",
+      "account": "zoe_0000",
+      "avatar": "/images/avatars/a4.png",
+      "photo": "/images/posts/main4.png",
+      "likes": 824,
+      "description": "我的老天鵝！",
+      "hashTags": "#鵝鵝",
+      "createTime": "7 HOURS AGO"
+    },
+    {
+      "id": 5,
+      "location": "南港區",
+      "account": "zoe_0000",
+      "avatar": "/images/avatars/a5.png",
+      "photo": "/images/posts/main5.png",
+      "likes": 98,
+      "description": "我的老天鵝！",
+      "hashTags": "#鵝鵝",
+      "createTime": "10 HOURS AGO"
+    }
+  ],
+  "stories": [
+    {
+      "id": 1,
+      "name": "bruce_fe",
+      "avatar": "/images/avatars/a1.png"
+    },
+    {
+      "id": 2,
+      "name": "max",
+      "avatar": "/images/avatars/a2.png"
+    },
+    {
+      "id": 3,
+      "name": "fm",
+      "avatar": "/images/avatars/a3.png"
+    },
+    {
+      "id": 4,
+      "name": "joanne",
+      "avatar": "/images/avatars/a4.png"
+    },
+    {
+      "id": 5,
+      "name": "focus",
+      "avatar": "/images/avatars/a5.png"
+    },
+    {
+      "id": 6,
+      "name": "louis",
+      "avatar": "/images/avatars/a6.png"
+    },
+    {
+      "id": 7,
+      "name": "alvin",
+      "avatar": "/images/avatars/a7.png"
+    },
+    {
+      "id": 8,
+      "name": "grace",
+      "avatar": "/images/avatars/a8.png"
+    },
+    {
+      "id": 9,
+      "name": "rance",
+      "avatar": "/images/avatars/a9.png"
+    },
+    {
+      "id": 10,
+      "name": "bruce_fe",
+      "avatar": "/images/avatars/a10.png"
+    }
+  ]
+}
+
+
+```
